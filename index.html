@@ -2,47 +2,88 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title>Firma Stara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona Firmowa</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #ffffff, #f0f0f0);
+      color: #333;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
     .container {
-      width: 80%;
-      max-width: 600px;
-      margin: 20px auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 20px;
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 50px;
     }
     section {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
     }
     h2 {
       margin-top: 0;
-      color: #333;
+      color: #1a1a1a;
     }
     p {
-      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#o-nas">O nas</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#dane">Dane</a>
+    </nav>
+  </header>
+
   <div class="container">
     <section id="o-nas">
       <h2>O nas</h2>
-      <p>Jesteśmy firmą, która robi zajebiste rzeczy dla swoich klientów.</p>
+      <p>Jesteśmy firmą, która robi zajebiste rzeczy dla swoich klientów. Nasza misja to nie pierdolić się w tańcu — robimy dobrze i na czas.</p>
     </section>
     <section id="oferta">
       <h2>Oferta</h2>
-      <p>Oferujemy usługi na najwyższym poziomie – nie pierdol, sprawdź sam.</p>
+      <p>Robimy strony, sklepy, aplikacje i wszystko inne, co tylko klient wymyśli. Lubimy wyzwania. A jak coś nie działa, to naprawiamy, a nie marudzimy.</p>
     </section>
     <section id="kontakt">
       <h2>Kontakt</h2>
@@ -53,5 +94,9 @@
       <p>NIP: 123-456-78-90<br>REGON: 987654321</p>
     </section>
   </div>
+
+  <footer>
+    © 2025 Firma Stara. Wszystkie prawa zastrzeżone.
+  </footer>
 </body>
 </html>
