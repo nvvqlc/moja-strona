@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Strony"
+    files:
+      - file: "content/o-nas.json"
+        label: "O nas"
+        name: "o-nas"
+        fields:
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Treść", name: "body", widget: "markdown" }
+      - file: "content/oferta.json"
+        label: "Oferta"
+        name: "oferta"
+        fields:
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Treść", name: "body", widget: "markdown" }
